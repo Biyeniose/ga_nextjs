@@ -1,9 +1,45 @@
 import Image from "next/image";
+import Button from "@mui/joy/Button";
+import ModeToggle from "./components/ModeToggle";
+import * as React from "react";
+import ButtonGroup from "@mui/joy/ButtonGroup";
+import IconButton from "@mui/joy/IconButton";
+import Tooltip from "@mui/joy/Tooltip";
+import Settings from "@mui/icons-material/Settings";
+import Person from "@mui/icons-material/Person";
+import Accordion from "@mui/joy/Accordion";
+import AccordionDetails from "@mui/joy/AccordionDetails";
+import AccordionGroup from "@mui/joy/AccordionGroup";
+import AccordionSummary from "@mui/joy/AccordionSummary";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <Button sx={{ mt: 1 }}>Log in</Button>
+        <AccordionGroup sx={{ maxWidth: 400 }}>
+          <Accordion>
+            <AccordionSummary>First accordion</AccordionSummary>
+            <AccordionDetails>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary>Second accordion</AccordionSummary>
+            <AccordionDetails>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary>Third accordion</AccordionSummary>
+            <AccordionDetails>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </AccordionDetails>
+          </Accordion>
+        </AccordionGroup>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -12,6 +48,21 @@ export default function Home() {
           height={38}
           priority
         />
+        <ButtonGroup variant="soft" aria-label="tooltip button group">
+          <Tooltip arrow title="Go to profile">
+            <Button startDecorator={<Person />}>Hover me</Button>
+          </Tooltip>
+          <Tooltip arrow title="Open settings">
+            <span>
+              <IconButton disabled>
+                <Settings />
+              </IconButton>
+            </span>
+          </Tooltip>
+          <Tooltip arrow title="Go to profile">
+            <Button endDecorator={<Person />}>Hover me</Button>
+          </Tooltip>
+        </ButtonGroup>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
@@ -49,7 +100,9 @@ export default function Home() {
           </a>
         </div>
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <ModeToggle />
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
