@@ -1,3 +1,4 @@
+import NestedCard from "@/components/test/NestedCard";
 import Button from "@mui/joy/Button";
 import * as React from "react";
 
@@ -31,6 +32,8 @@ export default function Home() {
           <li>Test your Footy knowledge with immersive games</li>
         </ol>
         <Button sx={{ mt: 1 }}>Contact Us</Button>
+
+        <NestedCard />
       </main>
     </div>
   );
