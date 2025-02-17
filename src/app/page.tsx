@@ -12,6 +12,24 @@ export default function Home() {
           <li>Test your Footy knowledge with immersive games</li>
         </ol>
 
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2">View the latest stats and trends in Football</li>
+          <li>Test your Footy knowledge with immersive games</li>
+        </ol>
+
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2">View the latest stats and trends in Football</li>
+          <li>Test your Footy knowledge with immersive games</li>
+
+          <li className="mb-2">View the latest stats and trends in Football</li>
+          <li>Test your Footy knowledge with immersive games</li>
+
+          <li className="mb-2">View the latest stats and trends in Football</li>
+          <li>Test your Footy knowledge with immersive games</li>
+
+          <li className="mb-2">View the latest stats and trends in Football</li>
+          <li>Test your Footy knowledge with immersive games</li>
+        </ol>
         <Button sx={{ mt: 1 }}>Contact Us</Button>
       </main>
     </div>

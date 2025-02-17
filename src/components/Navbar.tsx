@@ -6,7 +6,7 @@ import ChartSVG from "./icons/ChartSVG";
 
 export default function Navbar() {
   return (
-    <footer className="fixed bottom-0 w-full row-start-3 flex gap-6 flex-wrap items-center justify-center pb-5">
+    <div className="fixed bottom-0 w-full row-start-3 flex gap-6 flex-wrap items-center justify-center pb-5 pt-3 bg-white  text-black dark:bg-slate-950 dark:text-white ">
       <Link
         href="/"
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -29,6 +29,6 @@ export default function Navbar() {
         Teams
       </Link>
       <ModeToggle />
-    </footer>
+    </div>
   );
 }
