@@ -6,7 +6,7 @@ import ChartSVG from "./icons/ChartSVG";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 w-full flex gap-6 flex-wrap items-center justify-center pb-5 pt-3 bg-white text-black dark:bg-black dark:text-white bg-opacity-100 backdrop-blur-none shadow-md z-50">
+    <div className="fixed top-0 w-full flex gap-6 flex-wrap items-center justify-center pb-5 pt-3 bg-opacity-100 backdrop-blur-none shadow-md z-50">
       <Link
         href="/"
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
