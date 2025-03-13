@@ -10,6 +10,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row gap-6">
           <TopStatsCard />
+          <TopStatsCard />
         </div>
 
         <Button sx={{ mt: 1 }}>Contact Us</Button>
